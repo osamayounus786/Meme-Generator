@@ -57,4 +57,30 @@ font-weight: 700;
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  margin-top: 10px;
+}
+.meme-sec{
+  position: relative;
+}
+.top-text , .bottom-text{
+  font-weight: 900;
+  font-size: 50px;
+  
+  text-shadow:
+-2px 0px 0px rgb(5, 5, 5),
+2px 0px 0px rgb(7, 7, 7),
+0px -2px 0px rgb(6, 6, 6),
+0px 2px 0px rgb(8, 7, 7);color: rgb(246, 242, 242);
+position: absolute;
+  
+}
+.top-text{
+  top: 10%;
+  
+  right: 35%;
+}
+.bottom-text{
+  bottom: 10%;
+  
+  right: 35%;
 }

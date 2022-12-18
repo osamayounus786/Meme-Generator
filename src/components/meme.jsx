@@ -26,13 +26,32 @@ function Meme(){
             <div className="form">
                 <div className="input-parent">
                 
-            <input type="text" className="form-input" placeholder="top text" size={40} />
-            <input type="text" className="form-input" placeholder="bottom text" size={40}/>
+            <input 
+            type="text"
+            className="form-input"
+            placeholder="top text"
+            size={40}
+            name="topText"
+            value={meme.topText} />
+
+            <input 
+            type="text"
+            className="form-input"
+            placeholder="bottom text"
+            size={40}
+            name="bottomText"
+            value={meme.bottomText}
+            />
                 </div>
                 <br />
                 <button onClick={getMemeImage} className="form-btn">Get a new meme image</button>
             </div>
+            <div className='meme-sec'>
+
            <img src={meme.randomImage} alt="meme images"  className='meme-image'/>
+           <h2 className='top-text'>hello its me</h2>
+           <h2 className='bottom-text'>hola bola chola melo</h2>
+            </div>
         </main>
     )
 }
